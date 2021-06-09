@@ -32,7 +32,7 @@ trainer:
   resume_from_checkpoint: null # The path to a checkpoint file to continue the training, restores the whole state including the epoch, step, LR schedulers, apex, etc.
 
 exp_manager:
-  exp_dir: "/NeMo/Epochs15/nemo_experiments"  # exp_dir for your experiment, if None, defaults to "./nemo_experiments"
+  exp_dir: "/entities-and-relationsintext/relation_extraction/model/nemo_experiments"  # exp_dir for your experiment, if None, defaults to "./nemo_experiments"
   name: token_classification_model  # The name of your model
   create_tensorboard_logger: true  # Whether you want exp_manger to create a tb logger
   create_checkpoint_callback: true  # Whether you want exp_manager to create a model checkpoint callback
@@ -41,7 +41,7 @@ model:
   nemo_path: null # filename to save the model and associated artifacts to .nemo file
   label_ids: null # will be filled during training
   dataset:
-    data_dir: "/NeMo/data" # /path/to/data
+    data_dir: "/entities-and-relationsintext/relation_extraction/data" # /path/to/data
     class_balancing: weighted_loss # choose from [null, weighted_loss]. Weighted_loss enables the weighted class balancing of the loss, may be used for handling unbalanced classes
     max_seq_length: 128
     pad_label: 'O'

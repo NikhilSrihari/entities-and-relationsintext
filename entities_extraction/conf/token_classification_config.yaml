@@ -29,10 +29,10 @@ trainer:
   logger: False  # Provided by exp_manager
   log_every_n_steps: 20  # Interval of logging.
   val_check_interval: 1.0  # Set to 0.25 to check 4 times per epoch, or an int for number of iterations
-  resume_from_checkpoint: "/NeMo/Epochs10/nemo_experiments/token_classification_model/2020-12-17_09-18-34/checkpoints/token_classification_model.nemo" # The path to a checkpoint file to continue the training, restores the whole state including the epoch, step, LR schedulers, apex, etc.
+  resume_from_checkpoint: null # The path to a checkpoint file to continue the training, restores the whole state including the epoch, step, LR schedulers, apex, etc.
 
 exp_manager:
-  exp_dir: "/NeMo/Epochs10/nemo_experiments"  # exp_dir for your experiment, if None, defaults to "./nemo_experiments"
+  exp_dir: "/entities-and-relationsintext/entities_extraction/model/nemo_experiments"  # exp_dir for your experiment, if None, defaults to "./nemo_experiments"
   name: token_classification_model  # The name of your model
   create_tensorboard_logger: true  # Whether you want exp_manger to create a tb logger
   create_checkpoint_callback: true  # Whether you want exp_manager to create a model checkpoint callback
@@ -41,7 +41,7 @@ model:
   nemo_path: null # filename to save the model and associated artifacts to .nemo file
   label_ids: null # will be filled during training
   dataset:
-    data_dir: "/NeMo/data" # /path/to/data
+    data_dir: "/entities-and-relationsintext/entities_extraction/data" # /path/to/data
     class_balancing: weighted_loss # choose from [null, weighted_loss]. Weighted_loss enables the weighted class balancing of the loss, may be used for handling unbalanced classes
     max_seq_length: 128
     pad_label: 'O'

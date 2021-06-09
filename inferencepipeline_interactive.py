@@ -2,8 +2,8 @@ import os, sys
 from entities_extraction import token_classification_inference as entities_extraction_inference
 from relation_extraction import token_classification_inference as relation_extraction_inference
 
-ENTITIES_EXTRACTION_NEMOMODEL_LOCATION = "/gaugan/entities_extraction/model/token_classification_model.nemo"
-RELATION_EXTRACTION_NEMOMODEL_LOCATION = "/gaugan/relation_extraction/model/token_classification_model.nemo"
+ENTITIES_EXTRACTION_NEMOMODEL_LOCATION = "/entities-and-relationsintext/entities_extraction/model/token_classification_model.nemo"
+RELATION_EXTRACTION_NEMOMODEL_LOCATION = "/entities-and-relationsintext/relation_extraction/model/token_classification_model.nemo"
 
 entities_extraction_model, relation_extraction_model = None, None
 
