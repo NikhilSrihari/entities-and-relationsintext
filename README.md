@@ -16,13 +16,14 @@ Here are the steps to run inference:
 ``cd /gaugan && python inferencepipeline_interactive.py ``
 
 ## Training:
-There are 2 components, both of which are trained independently:
-###1 Entities Extraction:
+There are 2 components, both of which are trained independently:  
+
+### 1 Entities Extraction:
 Here are the steps to run training for the Entities Extraction component:
 1. Clone this model repo:  
 ``git clone -b mediumblog1 ``
-
-###2 Relation Extraction:
+  
+### 2 Relation Extraction:
 Here are the steps to run training for the Relation Extraction component:
 1. Clone this model repo:  
 ``git clone -b mediumblog1 ``
