@@ -7,7 +7,7 @@ This blog explains
 ## Training:
 There are 2 components, both of which are trained independently: 
  
-### 1 Entities Extraction:
+### 1. Entities Extraction:
 Here are the steps to run training for the Entities Extraction component:
 1. Clone the entities-and-relationsintext repo:  
 ``git clone -b mediumblog1 https://github.com/NikhilSrihari/entities-and-relationsintext.git``  
@@ -27,7 +27,7 @@ Place the training data (spread across 4 files ``text_train.txt``, ``text_dev.tx
 ``cd /entities-and-relationsintext/entities_extraction/``  
 ``python token_classification.py``
 
-### 2 Relation Extraction:
+### 2. Relation Extraction:
 Here are the steps to run training for the Entities Extraction component:
 1. Clone the entities-and-relationsintext repo:  
 ``git clone -b mediumblog1 https://github.com/NikhilSrihari/entities-and-relationsintext.git``  
